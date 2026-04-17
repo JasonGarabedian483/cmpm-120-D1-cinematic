@@ -1,0 +1,11 @@
+Rubric Criteria
+    - 3 Scenes (Main menu, loading screen, character jumping)
+    - 2 Audio assets (Main menu theme, loading screen theme)
+        - one recorded with my voice, another made in ps2 MTV Music Generator game
+    - 2 image assets (Main character, menu assets, platform blocks)
+        - all image assets besides background were drawn by me using using Adobe Fresco on Ipad.
+    - 1 Logotype text (Main Menu logo)
+        - Drawn by me using Adobe Fresco
+    - 1 Multi-line text block (Saving text block)
+    - 1+ Scene transition (Each scene dissolve transitions into the next)
+    - 1+ Object motion animation (Saving icon spinning during scene, "main character" jumping between blocks)
