@@ -13,6 +13,13 @@ class homeScreen extends Phaser.Scene {
     }
 
     update() {
-        if(Phaser.Input.Keyboard.JustDown(this.reload)) {}
+        // switching to next scene / reloading scene?
+        if(Phaser.Input.Keyboard.JustDown(this.reload)) {
+            this.scene.start(/*next scene*/)
+        }
+        if(Phaer.Input.Keyboard.JustDown(this.swap)) {
+            this.scene.start(/*previous screen?*/)
+        }
+
     }
 }
