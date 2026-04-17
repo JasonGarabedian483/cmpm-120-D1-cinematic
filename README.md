@@ -4,6 +4,7 @@ Rubric Criteria
         - one recorded with my voice, another made in ps2 MTV Music Generator game
     - 2 image assets (Main character, menu assets, platform blocks)
         - all image assets besides background were drawn by me using using Adobe Fresco on Ipad.
+    - 2+ geometric shapes (arrows made with rectangles and triangles)
     - 1 Logotype text (Main Menu logo)
         - Drawn by me using Adobe Fresco
     - 1 Multi-line text block (Saving text block)
