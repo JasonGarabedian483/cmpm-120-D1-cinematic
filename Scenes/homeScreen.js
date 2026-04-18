@@ -4,23 +4,21 @@ class homeScreen extends Phaser.Scene {
     }
 
     preload() {
-        this.load.path = './assets/';
+        this.load.path = 'assets/';
         this.load.image('background', 'background.png')
-        this.load.image(/*main menu icons here*/)
+        this.load.image('title', 'title.png')
     }
 
     create () {
-        this.object = this.add.image(0, 0, 'background');
+        let backgroundImage = this.add.image(400, 300, 'background');
+        backgroundImage.setScale(.5);
+
+        let titleImage = this.add.image(400, 150, 'title');
+        titleImage.setScale(.2);
+
+
     }
 
     update() {
-        // switching to next scene / reloading scene?
-        if(Phaser.Input.Keyboard.JustDown(this.reload)) {
-            this.scene.start(/*next scene*/)
-        }
-        if(Phaer.Input.Keyboard.JustDown(this.swap)) {
-            this.scene.start(/*previous screen?*/)
-        }
-
     }
 }
