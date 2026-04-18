@@ -11,6 +11,7 @@ class homeScreen extends Phaser.Scene {
         this.load.image('options', 'options.png')
         this.load.image('quit', 'quit.png')
         this.load.audio('menuTheme', 'MTV Music Generator.mp3')
+        this.load.image('character', 'char.png')
     }
 
     create () {
@@ -28,6 +29,9 @@ class homeScreen extends Phaser.Scene {
 
         let quitImage = this.add.image(400, 450, 'quit');
         quitImage.setScale(.25);
+
+        let charImage = this.add.image(300, 300, 'character');
+        charImage.setScale(.25);
 
         let menuTheme = this.sound.add('menuTheme');
         menuTheme.play();
