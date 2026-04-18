@@ -4,12 +4,13 @@ class homeScreen extends Phaser.Scene {
     }
 
     preload() {
-        this.load.image('background', './assets/background.png')
+        this.load.path = './assets/';
+        this.load.image('background', 'background.png')
         this.load.image(/*main menu icons here*/)
     }
 
     create () {
-        this.add.image(0,0, 'background').setOrigin(0)
+        this.object = this.add.image(0, 0, 'background');
     }
 
     update() {
