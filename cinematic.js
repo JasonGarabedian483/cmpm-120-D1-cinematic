@@ -1,4 +1,4 @@
-console.log("loaded correctly");
+/* console.log("loaded correctly");
 
 class Intro extends Phaser.Scene {
     create() {
@@ -17,4 +17,13 @@ const game = new Phaser.Game({
     width: 1000,
     height: 500,
     scene: [Intro]
-});
+}); */
+'use scrict';
+
+const config = {
+    width: 800,
+    height: 600,
+    scene: [ homeScreen ]
+}
+
+const game = new Phaser.Game(config)
