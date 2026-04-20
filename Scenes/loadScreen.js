@@ -13,6 +13,7 @@ class loadScreen extends Phaser.Scene {
         let backgroundImage = this.add.image(400, 300, 'background');
         backgroundImage.setScale(.5);
 
+        let charImage = this.add.image(400, 300, 'character');
     }
 
     update() {
