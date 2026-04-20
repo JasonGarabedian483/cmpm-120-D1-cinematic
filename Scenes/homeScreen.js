@@ -13,7 +13,7 @@ class homeScreen extends Phaser.Scene {
         this.load.audio('menuTheme', 'MTV Music Generator.mp3')
         this.load.image('character', 'char.png')
     }
- // TODO: make menu icons fade into the screen before character pops up and selects play
+    
     create () {
         let menuTheme = this.sound.add('menuTheme');
         menuTheme.play();
