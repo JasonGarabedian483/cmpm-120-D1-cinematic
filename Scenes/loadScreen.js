@@ -2,7 +2,7 @@ class loadScreen extends Phaser.Scene {
     constructor () {
         super('loadScreenScene')
     }
-// TODO: Add everything, FIX AUDIO
+
     preload() {
         this.load.path = 'assets/';
         this.load.image('background', 'background.png')
@@ -53,7 +53,7 @@ class loadScreen extends Phaser.Scene {
             textHighlight.fillStyle('0xffffff');
             textHighlight.fillRect(textBounds.x, textBounds.y, textBounds.width, textBounds.height);
             textHighlight.setAlpha(0);
-            
+
         this.tweens.add({
             delay: 750,
             targets: [charImage2, textBlock, textHighlight],
