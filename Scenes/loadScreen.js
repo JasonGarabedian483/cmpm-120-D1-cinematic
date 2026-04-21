@@ -11,7 +11,9 @@ class loadScreen extends Phaser.Scene {
     }
 
     create() {
-        let loadingTheme = this.sound.add('loadingTheme');
+        let loadingTheme = this.sound.add('loadingTheme', {
+            loop: true
+        });
         loadingTheme.play(); // figure out how to loop this
 
         let backgroundImage = this.add.image(400, 300, 'background');
@@ -94,6 +96,9 @@ class loadScreen extends Phaser.Scene {
     }
 
     update() {
-
+        this.time.delayedCall(5600, () => {
+            this.sound.stopAll();
+            //this.scene.start('homeScreenScene');
+        });
     }
 }

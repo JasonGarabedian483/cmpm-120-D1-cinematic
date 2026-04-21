@@ -1,6 +1,6 @@
 class homeScreen extends Phaser.Scene {
     constructor () {
-        super ('homeScreenscene')
+        super ('homeScreenScene')
     }
 
     preload() {
