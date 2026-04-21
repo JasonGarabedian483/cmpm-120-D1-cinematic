@@ -16,14 +16,14 @@ class homeScreen extends Phaser.Scene {
     
     create () {
         let menuTheme = this.sound.add('menuTheme');
-        menuTheme.play();
+            menuTheme.play();
 
         let backgroundImage = this.add.image(400, 300, 'background');
-        backgroundImage.setScale(.5);
+            backgroundImage.setScale(.5);
 
         let titleImage = this.add.image(400, 150, 'title');
-        titleImage.setScale(.2);
-        titleImage.setAlpha(0);
+            titleImage.setScale(.2);
+            titleImage.setAlpha(0);
 
         this.tweens.add({
             delay: 500,
@@ -34,16 +34,16 @@ class homeScreen extends Phaser.Scene {
         });
 
         let playImage = this.add.image(400, 300, 'play');
-        playImage.setScale(.25);
-        playImage.setAlpha(0);
+            playImage.setScale(.25);
+            playImage.setAlpha(0);
 
         let optionImage = this.add.image(400, 375, 'options');
-        optionImage.setScale(.25);
-        optionImage.setAlpha(0);
+            optionImage.setScale(.25);
+            optionImage.setAlpha(0);
 
         let quitImage = this.add.image(400, 450, 'quit');
-        quitImage.setScale(.25);
-        quitImage.setAlpha(0);
+            quitImage.setScale(.25);
+            quitImage.setAlpha(0);
 
         this.tweens.add({
             delay: 1500,
@@ -54,7 +54,7 @@ class homeScreen extends Phaser.Scene {
         })
 
         let charImage = this.add.image(-200, 300, 'character');
-        charImage.setScale(.25);
+            charImage.setScale(.25);
 
         this.tweens.add({
             delay: 2000,
