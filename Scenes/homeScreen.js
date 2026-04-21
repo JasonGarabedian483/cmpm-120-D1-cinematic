@@ -25,14 +25,6 @@ class homeScreen extends Phaser.Scene {
             titleImage.setScale(.2);
             titleImage.setAlpha(0);
 
-        this.tweens.add({
-            delay: 500,
-            targets: titleImage,
-            alpha: 1,
-            ease: 'linear',
-            duration: 1000
-        });
-
         let playImage = this.add.image(400, 300, 'play');
             playImage.setScale(.25);
             playImage.setAlpha(0);
@@ -45,6 +37,17 @@ class homeScreen extends Phaser.Scene {
             quitImage.setScale(.25);
             quitImage.setAlpha(0);
 
+        let charImage = this.add.image(-200, 300, 'character');
+            charImage.setScale(.25);
+        
+        this.tweens.add({
+            delay: 500,
+            targets: titleImage,
+            alpha: 1,
+            ease: 'linear',
+            duration: 1000
+        });
+
         this.tweens.add({
             delay: 1500,
             targets: [playImage, optionImage, quitImage],
@@ -52,9 +55,6 @@ class homeScreen extends Phaser.Scene {
             ease: 'linear',
             duration: 1000
         })
-
-        let charImage = this.add.image(-200, 300, 'character');
-            charImage.setScale(.25);
 
         this.tweens.add({
             delay: 2000,
