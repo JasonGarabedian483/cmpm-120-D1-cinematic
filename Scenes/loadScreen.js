@@ -97,7 +97,7 @@ class loadScreen extends Phaser.Scene {
     update() {
         this.time.delayedCall(5600, () => {
             this.sound.stopAll();
-            //this.scene.start('homeScreenScene');
+            this.scene.start('jumpScreenScene');
         });
     }
 }
