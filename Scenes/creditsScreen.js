@@ -42,7 +42,15 @@ class creditsScreen extends Phaser.Scene {
         let titleImage = this.add.image(400, 350, 'title');
             titleImage.setScale(.25);
 
-        
+        this.graphics = this.add.graphics();
+        this.graphics.fillStyle(0xffffff, 1);
+        this.graphics.fillTriangle(130, 120, 120, 160, 150, 130); // x of top left point, y of top left point, x of bottom point, y of bottom point
+        this.graphics.fillTriangle(200, 120, 200, 160, 225, 130);
+        this.graphics.fillTriangle(275, 130, 290, 160, 300, 130);
+        this.graphics.fillTriangle(430, 130, 440, 160, 450, 130);
+        this.graphics.fillTriangle(580, 130, 600, 160, 600, 125);
+        this.graphics.fillTriangle(180, 340, 230, 360, 180, 390);
+        this.graphics.fillRect(150, 350, 50, 26);
             
     }
 

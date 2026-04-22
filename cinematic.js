@@ -23,7 +23,7 @@ const game = new Phaser.Game({
 const config = {
     width: 800,
     height: 600,
-    scene: [ homeScreen, loadScreen, jumpScreen, creditsScreen ]
+    scene: [ creditsScreen, homeScreen, loadScreen, jumpScreen ]
 }
 
 const game = new Phaser.Game(config)
