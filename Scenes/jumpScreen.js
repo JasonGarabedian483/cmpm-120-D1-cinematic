@@ -78,6 +78,8 @@ class jumpScreen extends Phaser.Scene {
     }
 
     update() {
-
+        this.time.delayedCall(5000, () => {
+            this.scene.start('creditsScreenScene');
+        });
     }
 }

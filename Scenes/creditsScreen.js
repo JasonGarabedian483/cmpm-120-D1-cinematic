@@ -1,4 +1,4 @@
-class creditsScreen extends Phaser.Schene {
+class creditsScreen extends Phaser.Scene {
     constructor () {
         super ('creditsScreenScene')
     }
