@@ -15,14 +15,15 @@ class creditsScreen extends Phaser.Scene {
     }
 
     create() {
+
+
+        let backgroundImage = this.add.image(400, 300, 'background');
+            backgroundImage.setScale(.5);
+
         const creditText = this.add.text(200, 50, "Assets drawn by me", {
             font: "40px Arial", 
             color: "#ffffff"
         });
-            creditText.setDepth(1);
-
-        let backgroundImage = this.add.image(400, 300, 'background');
-            backgroundImage.setScale(.5);
         
         let charImage = this.add.image(200, 200, 'character');
             charImage.setScale(.25);
@@ -51,7 +52,6 @@ class creditsScreen extends Phaser.Scene {
         this.graphics.fillTriangle(580, 130, 600, 160, 600, 125);
         this.graphics.fillTriangle(180, 340, 230, 360, 180, 390);
         this.graphics.fillRect(150, 350, 50, 26);
-            
     }
 
     update() {

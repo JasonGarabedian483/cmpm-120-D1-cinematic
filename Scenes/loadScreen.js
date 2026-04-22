@@ -54,6 +54,8 @@ class loadScreen extends Phaser.Scene {
             textHighlight.fillRect(textBounds.x, textBounds.y, textBounds.width, textBounds.height);
             textHighlight.setAlpha(0);
 
+        
+
         this.tweens.add({
             delay: 750,
             targets: [charImage2, textBlock, textHighlight],
@@ -93,6 +95,8 @@ class loadScreen extends Phaser.Scene {
             duration: 250
         })
     }
+
+    
 
     update() {
         this.time.delayedCall(5600, () => {
