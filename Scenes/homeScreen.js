@@ -67,7 +67,7 @@ class homeScreen extends Phaser.Scene {
 
         this.tweens.add({
             targets: charImage,
-            delay: 2750,
+            delay: 2000,
             angle: 360,
             duration: 750,
             repeat: 2
