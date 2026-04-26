@@ -98,8 +98,6 @@ class homeScreen extends Phaser.Scene {
             ease: 'linear',
             duration: 1000
         })
-
-
     }
 
     update() {
